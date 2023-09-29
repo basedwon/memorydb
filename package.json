@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/frenware/framework/plaindb/memorydb.git"
+    "url": "git+https://github.com/basedwon/memorydb/memorydb.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/frenware/framework/plaindb/memorydb/issues"
+    "url": "https://github.com/basedwon/memorydb/memorydb/issues"
   },
-  "homepage": "https://gitlab.com/frenware/framework/plaindb/memorydb#readme",
+  "homepage": "https://github.com/basedwon/memorydb/memorydb#readme",
   "main": "lib/memory-db.js",
   "browser": {
     ".": "./lib/memory-db.js"
