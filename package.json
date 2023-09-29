@@ -1,0 +1,58 @@
+{
+  "name": "@plaindb/memorydb",
+  "version": "0.0.0",
+  "description": "An in-memory database that's designed for high-performance data storage and retrieval.",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/frenware/framework/plaindb/memorydb.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/frenware/framework/plaindb/memorydb/issues"
+  },
+  "homepage": "https://gitlab.com/frenware/framework/plaindb/memorydb#readme",
+  "main": "lib/memory-db.js",
+  "browser": {
+    ".": "./lib/memory-db.js"
+  },
+  "scripts": {
+    "dev:test": "nodemon -w ../.. -x npm test",
+    "dev": "nodemon -w ../.. test/memorydb.test.js",
+    "update": "npm run update:prod && npm run update:dev",
+    "update:prod": "npm i -S basd@latest @basd/nested@latest @plaindb/storage@latest",
+    "update:dev": "npm i -D @basd/testr@latest",
+    "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "test": "testr test"
+  },
+  "dependencies": {
+    "@basd/nested": "^0.0.0",
+    "@plaindb/storage": "^0.0.0",
+    "basd": "^1.0.9"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.1.1",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  },
+  "keywords": [
+    "in-memory-db",
+    "sorted-list",
+    "doubly-linked-list",
+    "comparator",
+    "key-value-store",
+    "stream",
+    "batch-operations",
+    "javascript",
+    "memory-db",
+    "evented",
+    "sub-database",
+    "encoding",
+    "readable-stream",
+    "iterable",
+    "map",
+    "async",
+    "plaindb",
+    "nested"
+  ]
+}
