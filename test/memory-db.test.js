@@ -6,7 +6,7 @@ const { Batch, BatchExecutor } = require('../lib/batch')
 describe('MemoryDB', () => {
   let db
 
-  beforeEach(async () => {
+  before(async () => {
     db = new MemoryDB()
     await db.isReady()
   })
@@ -126,7 +126,7 @@ describe('MemoryDB', () => {
 describe('Sorted', () => {
   let sorted
 
-  beforeEach(() => {
+  before(() => {
     sorted = new Sorted()
   })
 
@@ -145,7 +145,7 @@ describe('Sorted', () => {
 describe('SortedTree', () => {
   let sortedTree
 
-  beforeEach(() => {
+  before(() => {
     sortedTree = new SortedTree()
   })
 
@@ -171,7 +171,7 @@ describe('Batch and BatchExecutor', () => {
   let storage
 
   describe('Batch class', () => {
-    beforeEach(() => {
+    before(() => {
       storage = new MemoryDB()
     })
     it('should add put operations', () => {
@@ -206,7 +206,7 @@ describe('Batch and BatchExecutor', () => {
   })
 
   describe('BatchExecutor class', () => {
-    beforeEach(() => {
+    before(() => {
       storage = new MemoryDB()
     })
 
