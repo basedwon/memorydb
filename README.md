@@ -184,5 +184,5 @@ If you find this project useful and want to help support further development, pl
 
 ## License
 
-basd is [MIT licensed](https://gitlab.com/frenware/framework/plaindb/memorydb/-/blob/master/LICENSE).
+@plaindb/memorydb is [MIT licensed](https://gitlab.com/frenware/framework/plaindb/memorydb/-/blob/master/LICENSE).
 
